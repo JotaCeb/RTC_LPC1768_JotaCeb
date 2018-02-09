@@ -33,3 +33,13 @@ P1.25	=> F
 P1.26	=> G
 
 **************************************************************************************************/
+
+El sistema de CALIBRACIÓN permite sumar +1 segundo o +2 segundos en 
+caso de que la carga del procesador (interrupciones u otros), vaya
+retrasando en el tiempo el contador de tiempo del RTC. 
+
+/*************************************************************************************************/
+
+En caso de querer configurar la ALARMA, cada uno de los registros
+de la misma (ALSEC, ALMIN,...) deben coincidir con los registros 
+homólogos de cuenta del RTC (CTIMEx), que son SEC, MIN,... 
